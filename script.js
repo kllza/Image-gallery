@@ -1,5 +1,6 @@
 const searchBtn = document.getElementById("search-button");
 const input = document.getElementById("input");
+
 searchBtn.addEventListener("click", () => {
   const searchTerm = input.value.trim();
   if (searchTerm !== "") {
