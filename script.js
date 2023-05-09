@@ -9,7 +9,7 @@ searchBtn.addEventListener("click", () => {
   input.value = "";
 });
 
-searchImages = (query) => {
+const searchImages = (query) => {
   const apiKey = "bnoQbRq2uxZPhx6IxaLs82nr1hweEUsaq0CLDZEyTjM";
   const apiUrl = `https://api.unsplash.com/search/photos?query=${query}&client_id=${apiKey}`;
 
@@ -24,7 +24,7 @@ searchImages = (query) => {
     .catch((error) => console.log(error));
 };
 
-filterImages = (images, searchTerm) => {
+const filterImages = (images, searchTerm) => {
   const gallery = document.getElementById("gallery");
   gallery.innerHTML = "";
   let imageFound = false;
